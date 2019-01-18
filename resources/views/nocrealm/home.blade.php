@@ -1,4 +1,4 @@
-@extends('master')
+@extends('nocrealm.master')
 
 @section('content')
     <div class="page-content">
