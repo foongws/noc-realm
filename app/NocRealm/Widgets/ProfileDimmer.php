@@ -24,7 +24,7 @@ class ProfileDimmer extends BaseDimmer
         $count = Voyager::model('User')->count();
         $string = trans_choice('voyager::dimmer.user', $count);
 
-        return view('voyager::dimmer', array_merge($this->config, [
+        return view('nocrealm.dimmer', array_merge($this->config, [
             'icon'   => 'voyager-group',
             'title'  => "{$count} {$string}",
             'text'   => __('voyager::dimmer.user_text', ['count' => $count, 'string' => Str::lower($string)]),
