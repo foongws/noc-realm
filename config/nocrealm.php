@@ -32,6 +32,8 @@ return [
 
         'widgets' => [
             'App\\NocRealm\\Widgets\\ProfileDimmer',
+            'App\\NocRealm\\Widgets\\ProfileDimmer',
+            'App\\NocRealm\\Widgets\\ProfileDimmer',
         ],
 
     ],
