@@ -23,7 +23,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('nocrealm\home');
+        return view('nocrealm.home');
 	#return view('login');
     }
 }
