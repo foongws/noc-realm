@@ -32,8 +32,8 @@ return [
 
         'widgets' => [
             'App\\NocRealm\\Widgets\\ProfileDimmer',
-            'TCG\\Voyager\\Widgets\\PostDimmer',
-            'TCG\\Voyager\\Widgets\\PageDimmer',
+            //'TCG\\Voyager\\Widgets\\PostDimmer',
+            //'TCG\\Voyager\\Widgets\\PageDimmer',
         ],
 
     ],
