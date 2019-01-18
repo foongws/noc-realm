@@ -1,6 +1,6 @@
 <?php
 
-namespace App\NocRealm\Widgets\ProfileDimmer;
+namespace App\NocRealm\Widgets;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
