@@ -22,7 +22,7 @@ return [
             'Home' => [
                 'route'        => '/',
                 'icon_class'   => 'voyager-home',
-                'target_blank' => true,
+                'target_blank' => false,
             ],
             'Logout' => [
                 'route'      => 'voyager.logout',
