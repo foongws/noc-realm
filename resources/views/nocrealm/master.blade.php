@@ -68,8 +68,8 @@ if (starts_with(Auth::user()->avatar, 'http://') || starts_with(Auth::user()->av
 <div class="app-container">
     <div class="fadetoblack visible-xs"></div>
     <div class="row content-container">
-        @include('navbar')
-        @include('sidebar')
+        @include('nocrealm.navbar')
+        @include('nocrealm.sidebar')
         <script>
             (function(){
                     var appContainer = document.querySelector('.app-container'),
