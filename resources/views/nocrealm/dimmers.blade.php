@@ -1,5 +1,17 @@
 @php
-$dimmers = Voyager::dimmers();
+
+$widgetClasses = config('nocrealm.dashboard.widgets');
+
+$dimmers = Widget::group('voyager::dimmers');
+
+foreach ($widgetClasses as $widgetClass) {
+    $widget = app($widgetClass);
+
+    if ($widget->shouldBeDisplayed()) {
+        $dimmers->addWidget($widgetClass);
+    }
+}
+
 $count = $dimmers->count();
 $classes = [
     'col-xs-12',
