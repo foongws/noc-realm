@@ -63,7 +63,7 @@
 
             <div class="login-container">
 
-                <p>{{ __('voyager::login.signin_below') }}</p>
+                <p>{{ __('voyager::login.signin_below') }}test</p>
 
                 <form action="{{ route('voyager.login') }}" method="POST">
                     {{ csrf_field() }}
