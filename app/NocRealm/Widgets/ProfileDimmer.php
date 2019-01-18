@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 use TCG\Voyager\Facades\Voyager;
 
-class UserDimmer extends BaseDimmer
+class ProfileDimmer extends BaseDimmer
 {
     /**
      * The configuration array.
