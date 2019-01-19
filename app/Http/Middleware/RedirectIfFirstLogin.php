@@ -18,7 +18,8 @@ class RedirectIfFirstLogin
     public function handle($request, Closure $next, $guard = null)
     {
         $user = Auth::user();
-        if (!$user->last_login){
+        //if (!$user->last_login){
+        if (!$user->bio){
              //This will redirect the user to the onboarding area, if they haven't logged in before.
              return redirect()->route('setup-profile');
         }
