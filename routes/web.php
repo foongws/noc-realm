@@ -52,7 +52,7 @@ Route::get('/profile',function () {
 
 Route::get('/setup-profile', function(){
     return view('nocrealm.setup-profile');
-};
+});
 
 Route::group(['middleware' => ['setup-profile']], function () {
     // all routes will go here.
