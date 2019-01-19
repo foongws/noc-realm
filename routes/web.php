@@ -56,4 +56,11 @@ Route::get('/setup-profile', function(){
 
 Route::group(['middleware' => ['setup-profile']], function () {
     // all routes will go here.
+    $router->get('/', function () {
+        // Uses Auth Middleware
+    });
+
+    $router->get('/profile', function () {
+        // Uses Auth Middleware
+    });
 });
