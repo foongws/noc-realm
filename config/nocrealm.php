@@ -2,6 +2,18 @@
 
 return [
  
+
+        /*
+    |--------------------------------------------------------------------------
+    | Path to the Voyager Assets
+    |--------------------------------------------------------------------------
+    |
+    | Here you can specify the location of the voyager assets path
+    |
+    */
+
+    'assets_path' => '/vendor/nocrealm/assets',
+
     /*
     |--------------------------------------------------------------------------
     | Dashboard config
