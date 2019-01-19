@@ -49,3 +49,11 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/profile',function () {
     return view('nocrealm.profile');
 });
+
+Route::get('/setup-profile', function(){
+    return view('nocrealm.setup-profile');
+};
+
+Route::group(['middleware' => ['setup-profile']], function () {
+    // all routes will go here.
+}
