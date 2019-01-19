@@ -22,7 +22,7 @@ Route::get('/', function () {
 
 **/
 
-Route::get('/', 'HomeController@index')->name('home');
+
 
 Route::get('post/{slug}', function($slug){
 	$post = App\Post::where('slug', '=', $slug)->firstOrFail();
@@ -54,13 +54,14 @@ Route::get('/setup-profile', function(){
     return view('nocrealm.setup-profile');
 });
 
-Route::group(['middleware' => ['setup-profile']], function () use ($router) {
-    // all routes will go here.
-    $router->get('/', function () {
-        // Uses Auth Middleware
+Route::group(['middleware' => ['setup-profile']], function () {
+
+    Route::get('/', 'HomeController@index')->name('home');
+
+    Route::get('/home', 'HomeController@index')->name('home');
+
+    Route::get('/profile',function () {
+        return view('nocrealm.profile');
     });
 
-    $router->get('/profile', function () {
-        // Uses Auth Middleware
-    });
 });
