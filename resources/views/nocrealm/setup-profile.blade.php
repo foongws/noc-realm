@@ -18,7 +18,9 @@
              class="avatar"
              style="border-radius:50%; width:150px; height:150px; border:5px solid #fff;"
              alt="{{ Auth::user()->name }} avatar">
-        <h4>test setup profile</h4>
+        <h1>Welcome to NOC Realm.<br>
+        Please pick your class and enter your self introduction.
+        </h1>
         <h4>{{ ucwords(Auth::user()->name) }}</h4>
         <div class="user-email text-muted">{{ ucwords(Auth::user()->email) }}</div>
         <p>{{ Auth::user()->bio }}</p>
