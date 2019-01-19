@@ -10,7 +10,7 @@
 @stop
 
 @section('content')
-    <p>test setup profile</p>
+    
     <div style="background-size:cover; background-image: url({{ Voyager::image( Voyager::setting('site.login_bg_image'), config('voyager.assets_path') . '/images/bg.jpg') }}); background-position: center center;position:absolute; top:0; left:0; width:100%; height:300px;"></div>
     <div style="height:160px; display:block; width:100%"></div>
     <div style="position:relative; z-index:9; text-align:center;">
@@ -18,6 +18,7 @@
              class="avatar"
              style="border-radius:50%; width:150px; height:150px; border:5px solid #fff;"
              alt="{{ Auth::user()->name }} avatar">
+        <h4>test setup profile</h4>
         <h4>{{ ucwords(Auth::user()->name) }}</h4>
         <div class="user-email text-muted">{{ ucwords(Auth::user()->email) }}</div>
         <p>{{ Auth::user()->bio }}</p>
