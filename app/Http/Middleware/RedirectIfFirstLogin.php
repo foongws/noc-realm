@@ -21,7 +21,7 @@ class RedirectIfFirstLogin
         //if (!$user->last_login){
         if (!$user->bio){
              //This will redirect the user to the onboarding area, if they haven't logged in before.
-             return redirect()->route('setup-profile');
+             return redirect('/setup-profile');
         }
 
         return $next($request);
