@@ -54,7 +54,7 @@ Route::get('/setup-profile', function(){
     return view('nocrealm.setup-profile');
 });
 
-Route::group(['middleware' => ['setup-profile']], function () {
+Route::group(['middleware' => ['setup-profile']], function () use ($router) {
     // all routes will go here.
     $router->get('/', function () {
         // Uses Auth Middleware
