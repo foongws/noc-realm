@@ -109,7 +109,7 @@ if (starts_with(Auth::user()->avatar, 'http://') || starts_with(Auth::user()->av
              class="avatar"
              style="border-radius:50%; width:150px; height:150px; border:5px solid #fff;"
              alt="{{ Auth::user()->name }} avatar">
-        <img src="url({{ Voyager::image( Voyager::setting('site.login_bg_image'), config('voyager.assets_path') . '/images/bg.jpg') }});">
+        <img src="url(config('voyager.assets_path') . '/images/bg.jpg'));">
         <h1>Welcome to NOC Realm.<br>
         Please pick your class and enter your self introduction.
         </h1>
