@@ -56,4 +56,4 @@ Route::get('/setup-profile', function(){
 
 Route::group(['middleware' => ['setup-profile']], function () {
     // all routes will go here.
-}
+});
