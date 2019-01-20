@@ -109,7 +109,7 @@ if (starts_with(Auth::user()->avatar, 'http://') || starts_with(Auth::user()->av
     <div style="height:160px; display:block; width:100%"></div>
     <div style="position:relative; z-index:9; text-align:center;">
         <img src={{ asset(config('nocrealm.assets_path'). '/images/devil-mask.png') }}
-            class="img-fluid" style="float: left; margin: 0px 15px 15px 0px;"
+            class="img-fluid" style="float: left; margin: 0px 15px 15px 0px;"  width:100%
         >
         <h1>Welcome to NOC Realm.<br>
         Please pick your class and enter your self introduction.
