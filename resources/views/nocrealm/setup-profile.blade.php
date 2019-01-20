@@ -108,10 +108,6 @@ if (starts_with(Auth::user()->avatar, 'http://') || starts_with(Auth::user()->av
     <div style="background-size:cover; background-image: url({{ Voyager::image( Voyager::setting('site.login_bg_image'), config('voyager.assets_path') . '/images/bg.jpg') }}); background-position: center center;position:absolute; top:0; left:0; width:100%; height:300px;"></div>
     <div style="height:160px; display:block; width:100%"></div>
     <div style="position:relative; z-index:9; text-align:center;">
-        <img src="@if( !filter_var(Auth::user()->avatar, FILTER_VALIDATE_URL)){{ Voyager::image( Auth::user()->avatar ) }}@else{{ Auth::user()->avatar }}@endif"
-             class="avatar"
-             style="border-radius:50%; width:150px; height:150px; border:5px solid #fff;"
-             alt="{{ Auth::user()->name }} avatar">
         <img src={{ asset(config('nocrealm.assets_path'). '/images/devil-mask.png') }}
             class="img-fluid" style="float: left; margin: 0px 15px 15px 0px;"
         >
@@ -130,7 +126,7 @@ if (starts_with(Auth::user()->avatar, 'http://') || starts_with(Auth::user()->av
         </div>
     </div>
 </div>
-@include('voyager::partials.app-footer')
+
 
 <!-- Javascript Libs -->
 
