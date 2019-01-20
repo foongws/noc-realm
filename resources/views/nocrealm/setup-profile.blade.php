@@ -44,6 +44,9 @@
     @endif
 
     @yield('head')
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
 </head>
 
 <body class="voyager @if(isset($dataType) && isset($dataType->slug)){{ $dataType->slug }}@endif">
@@ -110,8 +113,7 @@ if (starts_with(Auth::user()->avatar, 'http://') || starts_with(Auth::user()->av
              style="border-radius:50%; width:150px; height:150px; border:5px solid #fff;"
              alt="{{ Auth::user()->name }} avatar">
         <img src={{ asset(config('nocrealm.assets_path'). '/images/devil-mask.png') }}
-            class="avatar"
-             style="border-radius:50%; width:150px; height:150px; border:5px solid #fff;"
+            class="img-fluid" style="float: left; margin: 0px 15px 15px 0px;"
         >
         <h1>Welcome to NOC Realm.<br>
         Please pick your class and enter your self introduction.
