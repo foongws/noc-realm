@@ -111,11 +111,12 @@ if (starts_with(Auth::user()->avatar, 'http://') || starts_with(Auth::user()->av
         <img src={{ asset(config('nocrealm.assets_path'). '/images/devil-mask.png') }}
             class="img-fluid" style="float: left; margin: 0px 15px 15px 0px;" width="300" 
         >
-        <h1>Welcome to NOC Realm.<br>
+        <h1>Welcome to NOC Realm.</h1>
+        <h2>
         Please pick your class and <br> tell us something about you.
-        </h1>
-        <h4>{{ ucwords(Auth::user()->name) }}</h4>
-        <div class="user-email text-muted">{{ ucwords(Auth::user()->email) }}</div>
+        </h2>
+        <h4>Name : {{ ucwords(Auth::user()->name) }}</h4>
+        <div class="user-email text-muted">Email : {{ ucwords(Auth::user()->email) }}</div>
         <p>{{ Auth::user()->bio }}</p>
         <a href="{{ route('voyager.users.edit', Auth::user()->id) }}" class="btn btn-primary">{{ __('voyager::profile.edit') }}</a>
     </div>
